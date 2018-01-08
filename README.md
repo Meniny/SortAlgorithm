@@ -45,3 +45,25 @@ You are welcome to fork and submit pull requests.
 ## License
 
 `SortAlgorithm` is open-sourced software, licensed under the `MIT` license.
+
+## Sample
+
+```swift
+// Randome Array
+let original = [Int].init(repeating: 0, count: 5000).map { $0 + Int(arc4random_uniform(5000)) }
+let closure: Array<Int>.SortingCompareClosure = { (l, r) -> Bool in
+    return l < r
+}
+// Now sort
+print("Bubble: \n\(original.bubbleSort(by: closure))")
+print("\n\n======\n\n")
+print("Insertion: \n\(original.insertionSort(by: closure))")
+print("\n\n======\n\n")
+print("Merge: \n\(original.mergeSort(by: closure))")
+print("\n\n======\n\n")
+print("Quick: \n\(original.quickSort(by: closure))")
+print("\n\n======\n\n")
+print("Counting: \n\(original.countingSort())")
+print("\n\n======\n\n")
+print("Heap: \n\(original.heapSort(by: closure))")
+```
