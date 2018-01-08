@@ -62,7 +62,7 @@
 //
 
 public extension Array where Element == Int {
-    // MAKR: - 计数排序
+    // MARK: - 计数排序
     /// Counting Sort
     ///
     /// - Returns: Sorted Array

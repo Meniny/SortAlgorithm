@@ -62,7 +62,7 @@
 //
 
 public extension Array where Element: Comparable {
-    // MAKR: - 堆排序
+    // MARK: - 堆排序
     /// Heap Sort
     ///
     /// - Parameter compare: Compare closure
@@ -82,7 +82,7 @@ public extension Array where Element: Comparable {
     }
 }
 
-// MAKR: - HeapSort Helper
+// MARK: - HeapSort Helper
 
 public protocol HeapType {
     associatedtype T

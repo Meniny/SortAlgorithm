@@ -68,7 +68,7 @@ public extension Array where Element: Comparable {
 
 public extension Array where Element: Comparable {
     
-    // MAKR: - 冒泡排序
+    // MARK: - 冒泡排序
     /// Bubble Sort
     ///
     /// - Parameter compare: Compare closure
@@ -114,7 +114,7 @@ public extension Array where Element: Comparable {
         return items
     }
 
-    // MAKR: - 归并排序
+    // MARK: - 归并排序
     /// Merge Sort
     ///
     /// - Parameter compare: Compare closure
@@ -152,7 +152,7 @@ public extension Array where Element: Comparable {
         }
     }
 
-    // MAKR: - 快速排序
+    // MARK: - 快速排序
     /// Quick Sort
     ///
     /// - Parameter compare: Compare closure

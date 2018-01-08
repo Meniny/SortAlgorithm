@@ -1,5 +1,5 @@
 PODS:
-  - SortAlgorithm (1.0.0)
+  - SortAlgorithm (1.0.1)
 
 DEPENDENCIES:
   - SortAlgorithm (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: ../
 
 SPEC CHECKSUMS:
-  SortAlgorithm: d14fe065a5dfbcd1b07f11c7bfc293533b66132e
+  SortAlgorithm: 515a48bb6cdacd5dfa779feac208b1ca8b12e4f6
 
 PODFILE CHECKSUM: 879c6730e28f493fd8b0c3a05c18fd17e42c43b6
 
