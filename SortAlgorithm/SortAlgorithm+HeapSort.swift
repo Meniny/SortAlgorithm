@@ -80,6 +80,15 @@ public extension Array where Element: Comparable {
         }
         return heap.items
     }
+    
+    /// Heap Sort, automatically compared by `l < r`
+    ///
+    /// - Returns: Sorted Array
+    public func heapSortAutomatically() -> [Element] {
+        return self.heapSort(by: { (l, r) -> Bool in
+            return l < r
+        })
+    }
 }
 
 // MARK: - HeapSort Helper

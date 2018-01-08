@@ -90,6 +90,15 @@ public extension Array where Element: Comparable {
         }
         return items
     }
+    
+    /// Bubble Sort, automatically compared by `l < r`
+    ///
+    /// - Returns: Sorted Array
+    public func bubbleSortAutomatically() -> [Element] {
+        return self.bubbleSort(by: { (l, r) -> Bool in
+            return l < r
+        })
+    }
 
     // MAKR: - 插入排序
     /// Insertion Sort
@@ -112,6 +121,15 @@ public extension Array where Element: Comparable {
             items[j+1] = key
         }
         return items
+    }
+    
+    /// Insertion Sort, automatically compared by `l < r`
+    ///
+    /// - Returns: Sorted Array
+    public func insertionSortAutomatically() -> [Element] {
+        return self.insertionSort(by: { (l, r) -> Bool in
+            return l < r
+        })
     }
 
     // MARK: - 归并排序
@@ -150,6 +168,15 @@ public extension Array where Element: Comparable {
             let right = Array(items[middle..<items.count]).mergeSort(by: compare)
             return internal_merge(left: left, right: right, by: compare)
         }
+    }
+    
+    /// Merge Sort, automatically compared by `l < r`
+    ///
+    /// - Returns: Sorted Array
+    public func mergeSortAutomatically() -> [Element] {
+        return self.mergeSort(by: { (l, r) -> Bool in
+            return l < r
+        })
     }
 
     // MARK: - 快速排序
@@ -190,5 +217,14 @@ public extension Array where Element: Comparable {
 
         internal_quickSort(&items, left: 0, right: items.count-1, by: compare)
         return items
+    }
+    
+    /// Quick Sort, automatically compared by `l < r`
+    ///
+    /// - Returns: Sorted Array
+    public func quickSortAutomatically() -> [Element] {
+        return self.quickSort(by: { (l, r) -> Bool in
+            return l < r
+        })
     }
 }
