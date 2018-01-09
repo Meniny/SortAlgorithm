@@ -67,7 +67,7 @@ public extension Array where Element: Comparable {
 }
 
 public extension Array where Element: Comparable {
-    
+
     // MARK: - 冒泡排序
     /// Bubble Sort
     ///
@@ -90,7 +90,7 @@ public extension Array where Element: Comparable {
         }
         return items
     }
-    
+
     /// Bubble Sort, automatically compared by `l < r`
     ///
     /// - Returns: Sorted Array
@@ -100,7 +100,7 @@ public extension Array where Element: Comparable {
         })
     }
 
-    // MAKR: - 插入排序
+    // MARK: - 插入排序
     /// Insertion Sort
     ///
     /// - Parameter compare: Compare closure
@@ -122,7 +122,7 @@ public extension Array where Element: Comparable {
         }
         return items
     }
-    
+
     /// Insertion Sort, automatically compared by `l < r`
     ///
     /// - Returns: Sorted Array
@@ -169,7 +169,7 @@ public extension Array where Element: Comparable {
             return internal_merge(left: left, right: right, by: compare)
         }
     }
-    
+
     /// Merge Sort, automatically compared by `l < r`
     ///
     /// - Returns: Sorted Array
@@ -218,7 +218,7 @@ public extension Array where Element: Comparable {
         internal_quickSort(&items, left: 0, right: items.count-1, by: compare)
         return items
     }
-    
+
     /// Quick Sort, automatically compared by `l < r`
     ///
     /// - Returns: Sorted Array

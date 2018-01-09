@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'SortAlgorithm'
-  s.version          = "1.1.0"
+  s.version          = "1.1.1"
   s.summary          = "Swift array sort algorithm"
   s.homepage         = "https://github.com/Meniny/SortAlgorithm"
   s.license          = { :type => "MIT", :file => "LICENSE" }
